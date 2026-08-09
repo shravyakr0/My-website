@@ -2,7 +2,7 @@
 
 My personal website, built as part of the [Hack Club Stardance](https://stardance.hackclub.com/) challenge.
 
-🔗 **Live site:** _[add your deployed link here once you set up GitHub Pages]_
+🔗 **Live site:** _(https://shravyakr0.github.io/My-website/)_
 
 ## 🌸 About
 

@@ -1,373 +1,429 @@
-/* ==========================================================================
-   STYLE.CSS - SHRAVYA'S CREATIVE PERSONAL WEBSITE
-   ==========================================================================
-   A clean, modern, and creative theme featuring soft pastel accents, 
-   smooth transitions, rounded cards, and flexbox/grid responsive layouts.
-   ========================================================================== */
+```css
+/* ------------------------------
+   Theme
+------------------------------ */
 
-/* --------------------------------------------------------------------------
-   1. COLOR PALETTE & DESIGN VARIABLES (:root)
-   --------------------------------------------------------------------------
-   Change these colors easily to update the theme of your site!
-   -------------------------------------------------------------------------- */
 :root {
-    /* Color Scheme */
-    --bg-page: #faf7f5;             /* Soft warm background */
-    --bg-card: #ffffff;             /* Crisp white card background */
-    --bg-card-hover: #fff9fb;       /* Soft blush card background on hover */
-    
-    /* Text Colors */
-    --text-main: #2d2638;           /* Deep elegant charcoal text */
-    --text-muted: #6e6479;          /* Soft mauve-gray for subtext */
-    
-    /* Creative Girl Pastel Gradient Accents */
-    --accent-pink: #ec4899;         /* Soft rose pink */
-    --accent-purple: #8b5cf6;       /* Soft lilac purple */
-    --gradient-accent: linear-gradient(135deg, #f472b6 0%, #a78bfa 100%);
-    --gradient-bg: linear-gradient(180deg, #fff0f5 0%, #faf7f5 100%);
-    
-    /* Styling & Effects */
-    --border-color: rgba(236, 72, 153, 0.15);
-    --border-hover: rgba(236, 72, 153, 0.4);
-    --card-radius: 20px;            /* Smooth rounded corners for cards */
-    --shadow-soft: 0 10px 25px -5px rgba(236, 72, 153, 0.08);
-    --shadow-hover: 0 15px 30px -5px rgba(236, 72, 153, 0.2);
-    --transition-smooth: all 0.3s ease;
-    
-    /* Typography */
-    --font-heading: 'Outfit', sans-serif;
-    --font-body: 'Plus Jakarta Sans', sans-serif;
+  --bg-page: #faf7f5;
+  --bg-card: #ffffff;
+  --bg-card-hover: #fff9fb;
+
+  --text-main: #2d2638;
+  --text-muted: #6e6479;
+
+  --accent-pink: #ec4899;
+  --accent-purple: #8b5cf6;
+  --gradient-accent: linear-gradient(135deg, #f472b6, #a78bfa);
+  --gradient-bg: linear-gradient(180deg, #fff0f5, #faf7f5);
+
+  --border-color: rgba(236, 72, 153, 0.15);
+  --border-hover: rgba(236, 72, 153, 0.4);
+
+  --card-radius: 20px;
+  --shadow-soft: 0 10px 25px -5px rgba(236, 72, 153, 0.08);
+  --shadow-hover: 0 15px 30px -5px rgba(236, 72, 153, 0.2);
+
+  --transition: all 0.3s ease;
+
+  --font-heading: "Outfit", sans-serif;
+  --font-body: "Plus Jakarta Sans", sans-serif;
 }
 
-/* --------------------------------------------------------------------------
-   2. GLOBAL RESETS & BASE STYLES
-   -------------------------------------------------------------------------- */
-*, *::before, *::after {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+
+/* ------------------------------
+   Base
+------------------------------ */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-/* Smooth scrolling when clicking nav links (#about, #projects, #contact) */
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
 body {
-    background: var(--bg-page);
-    color: var(--text-main);
-    font-family: var(--font-body);
-    line-height: 1.6;
-}
-
-/* Container to center content and control max page width */
-.container {
-    width: 88%;
-    max-width: 1000px;
-    margin: 0 auto;
-}
-
-/* Typography styles */
-h1, h2, h3 {
-    font-family: var(--font-heading);
-    font-weight: 700;
-    color: var(--text-main);
+  background: var(--bg-page);
+  color: var(--text-main);
+  font-family: var(--font-body);
+  line-height: 1.6;
 }
 
 a {
-    text-decoration: none;
-    color: inherit;
+  color: inherit;
+  text-decoration: none;
 }
 
-/* --------------------------------------------------------------------------
-   3. HEADER & NAVIGATION (#main-header)
-   -------------------------------------------------------------------------- */
+h1,
+h2,
+h3 {
+  color: var(--text-main);
+  font-family: var(--font-heading);
+  font-weight: 700;
+}
+
+.container {
+  width: 88%;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+
+/* ------------------------------
+   Header
+------------------------------ */
+
 #main-header {
-    position: sticky;
-    top: 0;
-    z-index: 100;
-    background-color: rgba(255, 255, 255, 0.85);
-    backdrop-filter: blur(12px); /* Glassmorphism effect */
-    border-bottom: 1px solid var(--border-color);
-    padding: 1.25rem 0;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+
+  padding: 1.25rem 0;
+
+  background: rgba(255, 255, 255, 0.85);
+  border-bottom: 1px solid var(--border-color);
+
+  backdrop-filter: blur(12px);
 }
 
 .header-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
-/* Branding (Site Title & Tagline) */
 .site-title {
-    font-size: 1.6rem;
-    background: var(--gradient-accent);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    line-height: 1.2;
+  font-size: 1.6rem;
+  line-height: 1.2;
+
+  background: var(--gradient-accent);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .site-tagline {
-    font-size: 0.88rem;
-    color: var(--text-muted);
-    font-weight: 500;
+  color: var(--text-muted);
+  font-size: 0.88rem;
+  font-weight: 500;
 }
 
-/* Navbar layout */
 .navbar {
-    display: flex;
-    gap: 1.75rem;
+  display: flex;
+  gap: 1.75rem;
 }
 
 .nav-link {
-    font-weight: 600;
-    font-size: 1rem;
-    color: var(--text-muted);
-    position: relative;
-    padding: 0.25rem 0;
-    transition: var(--transition-smooth);
+  position: relative;
+
+  padding: 0.25rem 0;
+
+  color: var(--text-muted);
+  font-size: 1rem;
+  font-weight: 600;
+
+  transition: var(--transition);
 }
 
-/* Hover effects for navigation links */
 .nav-link:hover {
-    color: var(--accent-pink);
+  color: var(--accent-pink);
 }
 
-/* Bottom underline effect on hover */
 .nav-link::after {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 0%;
-    height: 2px;
-    background: var(--gradient-accent);
-    transition: width 0.3s ease;
-    border-radius: 2px;
+  content: "";
+
+  position: absolute;
+  bottom: 0;
+  left: 0;
+
+  width: 0;
+  height: 2px;
+
+  border-radius: 2px;
+  background: var(--gradient-accent);
+
+  transition: width 0.3s ease;
 }
 
 .nav-link:hover::after {
-    width: 100%;
+  width: 100%;
 }
 
-/* --------------------------------------------------------------------------
-   4. HERO BANNER
-   -------------------------------------------------------------------------- */
+
+/* ------------------------------
+   Hero
+------------------------------ */
+
 .hero-banner {
-    background: var(--gradient-bg);
-    padding: 4rem 0 3rem;
-    text-align: center;
-    border-bottom: 1px solid var(--border-color);
+  padding: 4rem 0 3rem;
+
+  background: var(--gradient-bg);
+  border-bottom: 1px solid var(--border-color);
+
+  text-align: center;
 }
 
 .creative-badge {
-    display: inline-block;
-    background: rgba(236, 72, 153, 0.1);
-    color: var(--accent-pink);
-    border: 1px solid rgba(236, 72, 153, 0.25);
-    padding: 0.4rem 1.1rem;
-    border-radius: 50px;
-    font-size: 0.9rem;
-    font-weight: 600;
-    margin-bottom: 1rem;
+  display: inline-block;
+
+  margin-bottom: 1rem;
+  padding: 0.4rem 1.1rem;
+
+  border: 1px solid rgba(236, 72, 153, 0.25);
+  border-radius: 50px;
+
+  background: rgba(236, 72, 153, 0.1);
+  color: var(--accent-pink);
+
+  font-size: 0.9rem;
+  font-weight: 600;
 }
 
 .hero-heading {
-    font-size: clamp(1.8rem, 4vw, 2.75rem);
-    color: var(--text-main);
+  color: var(--text-main);
+  font-size: clamp(1.8rem, 4vw, 2.75rem);
 }
 
-/* --------------------------------------------------------------------------
-   5. SECTIONS & ABOUT ME SECTION (#about)
-   -------------------------------------------------------------------------- */
+
+/* ------------------------------
+   Sections
+------------------------------ */
+
 .section {
-    padding: 4.5rem 0;
+  padding: 4.5rem 0;
 }
 
 .section-heading {
-    font-size: 2rem;
-    margin-bottom: 1.5rem;
-    position: relative;
-    display: inline-block;
+  position: relative;
+
+  display: inline-block;
+
+  margin-bottom: 1.5rem;
+
+  font-size: 2rem;
 }
 
-/* Decorative underline beneath section headings */
 .section-heading::after {
-    content: '';
-    display: block;
-    width: 50%;
-    height: 4px;
-    background: var(--gradient-accent);
-    border-radius: 4px;
-    margin-top: 0.3rem;
+  content: "";
+
+  display: block;
+
+  width: 50%;
+  height: 4px;
+
+  margin-top: 0.3rem;
+
+  border-radius: 4px;
+  background: var(--gradient-accent);
 }
+
+
+/* About */
 
 .about-card {
-    background-color: var(--bg-card);
-    border: 1px solid var(--border-color);
-    border-radius: var(--card-radius);
-    padding: 2.25rem;
-    box-shadow: var(--shadow-soft);
-    line-height: 1.8;
+  padding: 2.25rem;
+
+  border: 1px solid var(--border-color);
+  border-radius: var(--card-radius);
+
+  background: var(--bg-card);
+  box-shadow: var(--shadow-soft);
+
+  line-height: 1.8;
 }
 
 .about-text {
-    font-size: 1.1rem;
-    color: var(--text-muted);
+  color: var(--text-muted);
+  font-size: 1.1rem;
 }
 
-/* --------------------------------------------------------------------------
-   6. PROJECTS SECTION (#projects & .project-card)
-   -------------------------------------------------------------------------- */
-/* Responsive CSS Grid for Project Cards */
+
+/* ------------------------------
+   Projects
+------------------------------ */
+
 .projects-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 1.75rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.75rem;
 }
 
-/* Project Card class for repeated elements */
 .project-card {
-    background-color: var(--bg-card);
-    border: 1px solid var(--border-color);
-    border-radius: var(--card-radius); /* Rounded corners */
-    padding: 2rem;
-    box-shadow: var(--shadow-soft);
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    transition: var(--transition-smooth);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  padding: 2rem;
+
+  border: 1px solid var(--border-color);
+  border-radius: var(--card-radius);
+
+  background: var(--bg-card);
+  box-shadow: var(--shadow-soft);
+
+  transition: var(--transition);
 }
 
-/* Hover animation on project card */
 .project-card:hover {
-    transform: translateY(-8px);
-    background-color: var(--bg-card-hover);
-    border-color: var(--border-hover);
-    box-shadow: var(--shadow-hover);
+  transform: translateY(-8px);
+
+  border-color: var(--border-hover);
+  background: var(--bg-card-hover);
+  box-shadow: var(--shadow-hover);
 }
 
 .project-card-header {
-    margin-bottom: 1rem;
+  margin-bottom: 1rem;
 }
 
 .card-icon {
-    font-size: 2rem;
+  font-size: 2rem;
 }
 
 .project-title {
-    font-size: 1.35rem;
-    margin-bottom: 0.75rem;
-    color: var(--text-main);
+  margin-bottom: 0.75rem;
+
+  color: var(--text-main);
+  font-size: 1.35rem;
 }
 
 .project-description {
-    color: var(--text-muted);
-    font-size: 0.95rem;
-    margin-bottom: 1.5rem;
-    flex-grow: 1;
+  flex-grow: 1;
+
+  margin-bottom: 1.5rem;
+
+  color: var(--text-muted);
+  font-size: 0.95rem;
 }
 
 .project-link {
-    color: var(--accent-pink);
-    font-weight: 700;
-    font-size: 0.95rem;
-    display: inline-block;
-    transition: var(--transition-smooth);
+  display: inline-block;
+
+  color: var(--accent-pink);
+  font-size: 0.95rem;
+  font-weight: 700;
+
+  transition: var(--transition);
 }
 
 .project-link:hover {
-    color: var(--accent-purple);
-    transform: translateX(4px);
+  color: var(--accent-purple);
+  transform: translateX(4px);
 }
 
-/* --------------------------------------------------------------------------
-   7. CONTACT SECTION (#contact)
-   -------------------------------------------------------------------------- */
+
+/* ------------------------------
+   Contact
+------------------------------ */
+
 .contact-card-box {
-    background-color: var(--bg-card);
-    border: 1px solid var(--border-color);
-    border-radius: var(--card-radius);
-    padding: 3rem 2rem;
-    box-shadow: var(--shadow-soft);
-    text-align: center;
+  padding: 3rem 2rem;
+
+  border: 1px solid var(--border-color);
+  border-radius: var(--card-radius);
+
+  background: var(--bg-card);
+  box-shadow: var(--shadow-soft);
+
+  text-align: center;
 }
 
 .text-center {
-    text-align: center;
+  text-align: center;
 }
 
 .text-center::after {
-    margin: 0.3rem auto 2rem;
+  margin: 0.3rem auto 2rem;
 }
 
 .contact-links {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 1.25rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.25rem;
 }
 
 .contact-item {
-    background: rgba(236, 72, 153, 0.05);
-    border: 1px solid var(--border-color);
-    border-radius: 50px; /* Pill shape */
-    padding: 0.85rem 1.75rem;
-    display: flex;
-    align-items: center;
-    gap: 0.6rem;
-    font-weight: 600;
-    color: var(--text-main);
-    transition: var(--transition-smooth);
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+
+  padding: 0.85rem 1.75rem;
+
+  border: 1px solid var(--border-color);
+  border-radius: 50px;
+
+  background: rgba(236, 72, 153, 0.05);
+  color: var(--text-main);
+
+  font-weight: 600;
+
+  transition: var(--transition);
 }
 
 .contact-item:hover {
-    background: var(--gradient-accent);
-    color: #ffffff;
-    transform: translateY(-3px);
-    box-shadow: var(--shadow-hover);
+  transform: translateY(-3px);
+
+  background: var(--gradient-accent);
+  color: #fff;
+
+  box-shadow: var(--shadow-hover);
 }
 
 .contact-icon {
-    font-size: 1.2rem;
+  font-size: 1.2rem;
 }
 
-/* --------------------------------------------------------------------------
-   8. FOOTER (#main-footer)
-   -------------------------------------------------------------------------- */
+
+/* ------------------------------
+   Footer
+------------------------------ */
+
 #main-footer {
-    border-top: 1px solid var(--border-color);
-    padding: 2rem 0;
-    margin-top: 3rem;
-    text-align: center;
-    background-color: #ffffff;
+  margin-top: 3rem;
+  padding: 2rem 0;
+
+  border-top: 1px solid var(--border-color);
+
+  background: #fff;
+
+  text-align: center;
 }
 
 .copyright-text {
-    color: var(--text-muted);
-    font-size: 0.95rem;
-    font-weight: 500;
+  color: var(--text-muted);
+  font-size: 0.95rem;
+  font-weight: 500;
 }
 
-/* --------------------------------------------------------------------------
-   9. RESPONSIVE DESIGN (Media Queries)
-   -------------------------------------------------------------------------- */
+
+/* ------------------------------
+   Responsive
+------------------------------ */
+
 @media (max-width: 768px) {
-    .header-container {
-        flex-direction: column;
-        gap: 0.8rem;
-        text-align: center;
-    }
+  .header-container {
+    flex-direction: column;
+    gap: 0.8rem;
 
-    .navbar {
-        gap: 1.25rem;
-    }
+    text-align: center;
+  }
 
-    .hero-banner {
-        padding: 3rem 0 2rem;
-    }
+  .navbar {
+    gap: 1.25rem;
+  }
 
-    .about-card, .contact-card-box {
-        padding: 1.75rem 1.25rem;
-    }
+  .hero-banner {
+    padding: 3rem 0 2rem;
+  }
+
+  .about-card,
+  .contact-card-box {
+    padding: 1.75rem 1.25rem;
+  }
 }
+```

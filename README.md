@@ -1,51 +1,61 @@
 # ✨ Shravya KR — Personal Website
 
-My personal website, built as part of the [Hack Club Stardance](https://stardance.hackclub.com/) challenge.
+My personal website, built for the [Hack Club Stardance](https://stardance.hackclub.com/) challenge.
 
-🔗 **Live site:** _(https://shravyakr0.github.io/My-website/)_
+🔗 **Live site:** https://shravyakr0.github.io/My-website/
 
 ## 🌸 About
 
-This is my little corner of the internet — a place to share who I am, what I'm exploring, and the projects I'm working on. I'm an 11th grade science student with a curiosity for how things work, from the logic behind code to the concepts behind chemistry and physics.
+This is my little corner of the internet. I made it to share a bit about myself, the things I'm learning, and some of the projects I've been working on.
+
+I'm an 11th grade science student, and I enjoy figuring out how things work — whether that's writing code, learning about physics and chemistry, or experimenting with new ideas.
 
 ## 🛠️ Built With
 
-- **HTML** — structure
-- **CSS** — styling
-- _(add JavaScript here later if you use it)_
+* **HTML** — page structure and content
+* **CSS** — styling, layout, animations, and responsive design
 
 ## 📂 Project Structure
 
-```
+```text
 My-website/
-├── index.html   # main page
-├── style.css    # styling
-└── README.md    # you're reading it!
+├── index.html   # Main webpage
+├── style.css    # Website styles
+└── README.md    # Project documentation
 ```
 
 ## 🚀 Running Locally
 
-1. Clone this repo:
-   ```
-   git clone https://github.com/shravyakr0/My-website.git
-   ```
-2. Open `index.html` in your browser (just double-click it, or right-click → "Open with" your browser).
+Want to try it out on your own computer?
 
-## 📌 Sections
+1. Clone the repository:
 
-- **About Me** — a short intro about who I am
-- **Projects** — things I've built, including this site
-- **Contact** — how to reach me
+```bash
+git clone https://github.com/shravyakr0/My-website.git
+```
+
+2. Open the project folder.
+3. Open `index.html` in your browser.
+
+That's it — no build tools or setup needed.
+
+## 📌 What's On The Site?
+
+* **About Me** — A little introduction and what I'm currently interested in
+* **Projects** — Some of the things I've built or experimented with
+* **Contact** — Links where you can find me online
 
 ## 📬 Contact
 
-- 📧 shravyakr0@gmail.com
-- 💻 [GitHub](https://github.com/shravyakr0)
+* 📧 [Email](mailto:shravyakr0@gmail.com)
+* 💻 [GitHub](https://github.com/shravyakr0)
 
 ## 📝 Status
 
-🚧 Work in progress — built and improved as I learn more HTML, CSS, and JS through Stardance.
+🚧 **Work in progress**
+
+I'm still learning, so the website will probably change as I pick up new HTML and CSS skills (and eventually more JavaScript).
 
 ---
 
-Made with 🌸 and curiosity, as part of Hack Club Stardance.
+Made with 🌸 and curiosity as part of **Hack Club Stardance**.

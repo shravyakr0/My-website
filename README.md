@@ -1,32 +1,23 @@
-# ✨ Shravya KR — Personal Website
+#  Shravya KR — Personal Website
 
 My personal website, built for the [Hack Club Stardance](https://stardance.hackclub.com/) challenge.
 
-🔗 **Live site:** https://shravyakr0.github.io/My-website/
+ **Live site:** https://shravyakr0.github.io/My-website/
 
-## 🌸 About
+##  About
 
 This is my little corner of the internet. I made it to share a bit about myself, the things I'm learning, and some of the projects I've been working on.
 
-I'm an 11th grade science student, and I enjoy figuring out how things work — whether that's writing code, learning about physics and chemistry, or experimenting with new ideas.
+I'm an 11th grade science student, and I like figuring out how things work — whether that's writing code, learning about physics and chemistry, or just trying out new ideas.
 
-## 🛠️ Built With
+##  Built With
 
 * **HTML** — page structure and content
 * **CSS** — styling, layout, animations, and responsive design
 
-## 📂 Project Structure
+##  Running Locally
 
-```text
-My-website/
-├── index.html   # Main webpage
-├── style.css    # Website styles
-└── README.md    # Project documentation
-```
-
-## 🚀 Running Locally
-
-Want to try it out on your own computer?
+If you want to run it on your computer:
 
 1. Clone the repository:
 
@@ -37,25 +28,25 @@ git clone https://github.com/shravyakr0/My-website.git
 2. Open the project folder.
 3. Open `index.html` in your browser.
 
-That's it — no build tools or setup needed.
+There's no build setup or extra dependencies needed.
 
-## 📌 What's On The Site?
+##  What's On The Site?
 
-* **About Me** — A little introduction and what I'm currently interested in
-* **Projects** — Some of the things I've built or experimented with
-* **Contact** — Links where you can find me online
+* **About Me** — A short introduction about me and what I'm interested in
+* **Projects** — Some of the things I've built and experimented with
+* **Contact** — Links to find me online
 
-## 📬 Contact
+##  Contact
 
-* 📧 [Email](mailto:shravyakr0@gmail.com)
-* 💻 [GitHub](https://github.com/shravyakr0)
+*  [Email](mailto:shravyakr0@gmail.com)
+*  [GitHub](https://github.com/shravyakr0)
 
-## 📝 Status
+## Status
 
-🚧 **Work in progress**
+ **Work in progress**
 
-I'm still learning, so the website will probably change as I pick up new HTML and CSS skills (and eventually more JavaScript).
+I'm still learning, so I'll probably keep changing the site as I learn more about HTML, CSS, and eventually JavaScript.
 
 ---
 
-Made with 🌸 and curiosity as part of **Hack Club Stardance**.
+Made with and curiosity as part of **Hack Club Stardance**.

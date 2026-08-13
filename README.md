@@ -1,52 +1,26 @@
-#  Shravya KR — Personal Website
+# Science × Code Journal
 
-My personal website, built for the [Hack Club Stardance](https://stardance.hackclub.com/) challenge.
+My personal website built for the Hack Club Stardance Challenge.
 
- **Live site:** https://shravyakr0.github.io/My-website/
+## About
 
-##  About
+I'm Shravya, an 11th grade science student interested in coding, physics, chemistry, and building projects.
 
-This is my little corner of the internet. I made it to share a bit about myself, the things I'm learning, and some of the projects I've been working on.
+## Features
 
-I'm an 11th grade science student, and I like figuring out how things work — whether that's writing code, learning about physics and chemistry, or just trying out new ideas.
+- Dark theme design
+- Learning topic switcher
+- Random science question generator
+- Responsive layout
 
-##  Built With
+## Built With
 
-* **HTML** — page structure and content
-* **CSS** — styling, layout, animations, and responsive design
+- HTML
+- CSS
+- JavaScript
 
-##  Running Locally
+## Author
 
-If you want to run it on your computer:
+Shravya KR
 
-1. Clone the repository:
-
-```bash
-git clone https://github.com/shravyakr0/My-website.git
-```
-
-2. Open the project folder.
-3. Open `index.html` in your browser.
-
-There's no build setup or extra dependencies needed.
-
-##  What's On The Site?
-
-* **About Me** — A short introduction about me and what I'm interested in
-* **Projects** — Some of the things I've built and experimented with
-* **Contact** — Links to find me online
-
-##  Contact
-
-*  [Email](mailto:shravyakr0@gmail.com)
-*  [GitHub](https://github.com/shravyakr0)
-
-## Status
-
- **Work in progress**
-
-I'm still learning, so I'll probably keep changing the site as I learn more about HTML, CSS, and eventually JavaScript.
-
----
-
-Made with and curiosity as part of **Hack Club Stardance**.
+GitHub: https://github.com/shravyakr0

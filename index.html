@@ -1,141 +1,131 @@
-```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <title>Shravya KR | Science × Code Journal</title>
-
     <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
-    <header>
-        <div class="container">
+<header>
+    <div class="container">
+        <div>
             <h1>Shravya KR</h1>
-            <p>Science × Code Journal</p>
-
-            <nav>
-                <a href="#about">About</a>
-                <a href="#projects">Projects</a>
-                <a href="#learning">Learning</a>
-                <a href="#contact">Contact</a>
-            </nav>
+            <p class="subtitle">Science × Code Journal</p>
         </div>
-    </header>
 
-    <main>
+        <nav>
+            <a href="#about">About</a>
+            <a href="#learning">Learning</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </div>
+</header>
 
-        <section class="hero">
-            <div class="container">
-                <p class="label">ENTRY_001 / HELLO</p>
+<section class="hero">
+    <div class="container">
+        <p class="label">ENTRY_001 / HELLO</p>
 
-                <h2>I like figuring out<br>how things work.</h2>
+        <h2>I like figuring out how things work.</h2>
 
-                <p>
-                    I'm Shravya, an 11th grade science student
-                    interested in coding, physics, chemistry,
-                    and building things on the web.
-                </p>
+        <p>
+            I'm Shravya, an 11th grade science student interested in
+            coding, physics, chemistry, and building projects.
+        </p>
 
-                <a href="#projects">Explore my work →</a>
-            </div>
-        </section>
+        <a href="#projects" class="button">Explore My Work</a>
+    </div>
+</section>
 
-        <section id="about">
-            <div class="container">
-                <p class="label">ENTRY_002 / ABOUT</p>
+<section id="about">
+    <div class="container">
+        <p class="label">ENTRY_002 / ABOUT</p>
 
-                <h2>About Me</h2>
+        <h2>About Me</h2>
 
-                <p>
-                    I'm curious about how things work, from the logic
-                    behind a program to the ideas behind physics and
-                    chemistry. I enjoy learning by building small
-                    projects and experimenting with new ideas.
-                </p>
-            </div>
-        </section>
+        <p>
+            I enjoy learning by building things. Whether it's creating a
+            website, making a game, or experimenting with code, I like
+            turning ideas into projects.
+        </p>
+    </div>
+</section>
 
-        <section id="learning">
-            <div class="container">
-                <p class="label">ENTRY_003 / CURRENTLY EXPLORING</p>
+<section id="learning">
+    <div class="container">
+        <p class="label">ENTRY_003 / LEARNING</p>
 
-                <h2>What I'm Learning</h2>
+        <h2>What I'm Learning</h2>
 
-                <ul>
-                    <li>Web Development</li>
-                    <li>JavaScript</li>
-                    <li>Physics</li>
-                    <li>Chemistry</li>
-                </ul>
-            </div>
-        </section>
+        <div class="learning-buttons">
+            <button class="topic-button" data-topic="code">Code</button>
+            <button class="topic-button" data-topic="physics">Physics</button>
+            <button class="topic-button" data-topic="chemistry">Chemistry</button>
+        </div>
 
-        <section id="projects">
-            <div class="container">
-                <p class="label">ENTRY_004 / BUILT</p>
+        <p id="topic-text">
+            Choose a topic to see what I'm learning.
+        </p>
+    </div>
+</section>
 
-                <h2>Things I've Built</h2>
+<section id="projects">
+    <div class="container">
+        <p class="label">ENTRY_004 / PROJECTS</p>
 
-                <article>
-                    <span>01</span>
-                    <h3>Garlic Mania</h3>
-                    <p>
-                        A fast-paced minigame collection made with Godot 4.
-                    </p>
-                    <a href="#">View Project →</a>
-                </article>
+        <h2>Things I've Built</h2>
 
-                <article>
-                    <span>02</span>
-                    <h3>Pulse Tab</h3>
-                    <p>
-                        A custom browser new-tab project built with HTML,
-                        CSS, and JavaScript.
-                    </p>
-                    <a href="#">View Project →</a>
-                </article>
+        <div class="project">
+            <h3>01. Garlic Mania</h3>
+            <p>A Godot 4 minigame collection inspired by WarioWare.</p>
+        </div>
 
-                <article>
-                    <span>03</span>
-                    <h3>Harry</h3>
-                    <p>
-                        A Hack Club Slack bot built with Node.js and Slack Bolt.
-                    </p>
-                    <a href="#">View Project →</a>
-                </article>
-            </div>
-        </section>
+        <div class="project">
+            <h3>02. Pulse Tab</h3>
+            <p>A custom browser new-tab page built with web technologies.</p>
+        </div>
 
-        <section id="contact">
-            <div class="container">
-                <p class="label">ENTRY_005 / CONTACT</p>
+        <div class="project">
+            <h3>03. Harry</h3>
+            <p>A Hack Club Slack bot built with Node.js and Slack Bolt.</p>
+        </div>
+    </div>
+</section>
 
-                <h2>Let's Connect</h2>
+<section id="experiment">
+    <div class="container">
+        <p class="label">ENTRY_005 / CURIOSITY CHECK</p>
 
-                <p>
-                    Want to see what I'm building next?
-                </p>
+        <h2>Random Science Question</h2>
 
-                <a href="mailto:shravyakr0@gmail.com">
-                    Email me →
-                </a>
+        <p id="question-text">
+            Click the button to get a science question.
+        </p>
 
-                <a href="https://github.com/shravyakr0">
-                    GitHub →
-                </a>
-            </div>
-        </section>
+        <button id="question-button">
+            Give Me A Question
+        </button>
+    </div>
+</section>
 
-    </main>
+<section id="contact">
+    <div class="container">
+        <p class="label">ENTRY_006 / CONTACT</p>
 
-    <footer>
-        <p>© 2026 Shravya KR · Science × Code Journal</p>
-    </footer>
+        <h2>Get In Touch</h2>
+
+        <p>Email: shravyakr0@gmail.com</p>
+        <p>GitHub: github.com/shravyakr0</p>
+    </div>
+</section>
+
+<footer>
+    <p>© 2026 Shravya KR</p>
+</footer>
+
+<script src="script.js"></script>
 
 </body>
 </html>
-```
